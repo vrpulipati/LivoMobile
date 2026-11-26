@@ -1,13 +1,13 @@
 # Livo Mobile
 
-Livo is a private, local-first iPhone and Android app. Records, money statements, and reminder history are stored in SQLite on the phone. The app has no AI, backend, account, advertising, or subscription.
+Livo is a private, local-first iPhone and Android app. Records, money statements, and reminder history stay on your phone.
 
 ## Before you start
 
 Run every command below from this folder:
 
 ```powershell
-cd "C:\Users\Rahul\OneDrive\Documents\ChatGPT\New project\LivoMobile"
+cd LivoMobile
 ```
 
 Install dependencies once after downloading or cloning the project:
