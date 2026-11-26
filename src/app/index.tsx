@@ -119,3 +119,4 @@ const styles = StyleSheet.create({
   fieldLabel: { color: ink, fontSize: 13, fontWeight: '700', marginTop: 10, marginBottom: 5 }, field: { backgroundColor: '#fffdf8', borderWidth: 1, borderColor: '#e6ddcd', borderRadius: 14, paddingHorizontal: 13, paddingVertical: 12, color: ink, fontSize: 15 }, fieldMulti: { minHeight: 92, textAlignVertical: 'top' }, dateRow: { backgroundColor: '#fffdf8', borderBottomWidth: 1, borderBottomColor: '#e4ddcf', paddingVertical: 16, marginTop: 8, flexDirection: 'row', justifyContent: 'space-between', color: ink },
   monthNav: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', backgroundColor: '#fffdf8', borderRadius: 14, paddingVertical: 10, paddingHorizontal: 15, marginBottom: 8 }, arrow: { fontSize: 29, color: forest, paddingHorizontal: 9 }, monthTitle: { fontWeight: '800', color: ink, fontSize: 16 }, rangeLabel: { color: muted, textAlign: 'center', marginBottom: 8, fontSize: 13 },
 });
+
