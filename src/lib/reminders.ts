@@ -5,7 +5,11 @@ import type { Reminder } from './database';
 Notifications.setNotificationHandler({ handleNotification: async () => ({ shouldShowBanner: true, shouldShowList: true, shouldPlaySound: true, shouldSetBadge: false }) });
 
 export async function requestReminderPermission(): Promise<boolean> {
-  if (Platform.OS === 'android') await Notifications.setNotificationChannelAsync('livo-reminders', { name: 'Livo reminders', importance: Notifications.AndroidImportance.DEFAULT });
+  if (Platform.OS === 'android') {
+    // Expo SDK 58 exposes this enum on the Notifications namespace.
+    // eslint-disable-next-line import/namespace
+    await Notifications.setNotificationChannelAsync('livo-reminders', { name: 'Livo reminders', importance: Notifications.AndroidImportance.DEFAULT });
+  }
   const current = await Notifications.getPermissionsAsync();
   const status = current.status === 'granted' ? current : await Notifications.requestPermissionsAsync();
   return status.status === 'granted';
